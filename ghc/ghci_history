@@ -1,0 +1,6 @@
+exit()
+ksjdkj
+exit
+main
+:l ./src/Lib.hs
+:l lib.hs
