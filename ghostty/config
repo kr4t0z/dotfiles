@@ -1,0 +1,90 @@
+# Ghostty Configuration - Eye-Saver Optimized
+# Two styles: Minimal & Clean, and Ultimate Eye-Saver
+
+# =============================================================================
+# SHARED SETTINGS
+# =============================================================================
+
+mouse-hide-while-typing = true
+clipboard-read = allow
+clipboard-paste-protection = false
+window-height = 80
+window-width = 300
+window-vsync = true
+keybind = shift+enter=text:\n
+
+# =============================================================================
+# STYLE 1: MINIMAL & CLEAN
+# Apple-inspired, distraction-free
+# =============================================================================
+
+# theme = Rose Pine
+# font-family = "SF Mono"
+# font-size = 18
+# cursor-style = bar
+# cursor-style-blink = false
+# window-decoration = false
+# window-padding-x = 20
+# window-padding-y = 15
+# background-opacity = 1
+
+# =============================================================================
+# STYLE 2: ULTIMATE EYE-SAVER
+# Maximum comfort for long coding sessions
+# =============================================================================
+
+# -- THEME --
+# Catppuccin Mocha: warm dark theme with muted colors
+# Works beautifully on OLED - deep blacks without being pure #000
+theme = Catppuccin Mocha
+
+# -- OLED OPTIMIZATION --
+# On OLED, we can use slightly lower brightness text
+# The true blacks make contrast naturally comfortable
+
+# -- FONT --
+# Maple Mono: rounded letterforms reduce sharpness fatigue
+# Size 19: large enough to read without squinting
+# Not too large to avoid excessive eye movement
+font-family = "Maple Mono"
+font-size = 19
+
+# -- CURSOR --
+# Underline: minimal visual footprint, less distracting than block
+# No blink: eliminates repetitive motion that strains peripheral vision
+cursor-style = underline
+cursor-style-blink = false
+
+# -- WINDOW --
+# Full opacity: no background noise bleeding through
+# Titlebar on: consistent UI, easy window management
+window-decoration = true
+background-opacity = 1
+
+# -- SPACING --
+# Generous padding: content breathes, reduces claustrophobic feeling
+# 24px horizontal: eyes don't track to screen edge
+# 20px vertical: comfortable line start position
+window-padding-x = 24
+window-padding-y = 20
+
+# -- READABILITY --
+# Minimum contrast 1.2: ensures text pops without being harsh
+# Prevents washed-out text that causes squinting
+minimum-contrast = 1.2
+
+# -- FOCUS --
+# Dim unfocused splits: reduces visual noise, guides attention
+# 0.85 keeps context visible but clearly secondary
+unfocused-split-opacity = 0.85
+
+# =============================================================================
+# YOUR ORIGINAL SETTINGS (for reference)
+# =============================================================================
+
+# theme = Catppuccin Macchiato
+# font-family = "JetBrains Mono Nerd Font Mono"
+# font-size = 20
+# cursor-style = block
+# window-decoration = true
+# background-opacity = 1

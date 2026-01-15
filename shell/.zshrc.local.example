@@ -1,0 +1,27 @@
+# =============================================================================
+# Local ZSH Configuration (SECRETS - DO NOT COMMIT)
+# =============================================================================
+# Copy this file to ~/.zshrc.local and fill in your values
+# This file is gitignored
+
+# -----------------------------------------------------------------------------
+# API Keys
+# -----------------------------------------------------------------------------
+export SPOTIFY_CLIENT_ID='your_spotify_client_id'
+export SPOTIFY_CLIENT_SECRET='your_spotify_client_secret'
+export ANTHROPIC_API_KEY='your_anthropic_api_key'
+
+# -----------------------------------------------------------------------------
+# SSH Aliases
+# -----------------------------------------------------------------------------
+# alias sshserver='ssh user@your.server.ip'
+
+# -----------------------------------------------------------------------------
+# Machine-Specific Aliases
+# -----------------------------------------------------------------------------
+# Add machine-specific aliases here
+
+# -----------------------------------------------------------------------------
+# Custom Claude Alias (optional)
+# -----------------------------------------------------------------------------
+# alias claude='afplay ~/.config/sounds/post_beep.mp3 & command claude'

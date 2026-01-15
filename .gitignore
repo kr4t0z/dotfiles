@@ -1,0 +1,26 @@
+# Secrets - NEVER commit these
+.zshrc.local
+*.local
+**/secrets/
+**/credentials/
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Nvim
+nvim/.claude/
+nvim/.neoconf.json
+
+# Cache and temp
+*.swp
+*.swo
+.cache/
