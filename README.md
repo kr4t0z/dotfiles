@@ -17,37 +17,6 @@ My macOS dotfiles for a productive development environment.
 | `fzf/` | Fuzzy finder shell integrations |
 | `karabiner/` | Karabiner-Elements keyboard customization |
 
-## Prerequisites
-
-Install these via Homebrew:
-
-```bash
-# Core tools
-brew install zsh git tmux neovim fzf direnv asdf
-
-# Terminal
-brew install --cask ghostty
-
-# Window management
-brew install koekeishiya/formulae/yabai
-brew install koekeishiya/formulae/skhd
-brew tap FelixKratz/formulae
-brew install sketchybar
-
-# Keyboard
-brew install --cask karabiner-elements
-
-# Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Zsh plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# Tmux Plugin Manager
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-```
-
 ## Installation
 
 1. Clone this repository:
@@ -60,6 +29,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
    cd ~/dotfiles
    ./install.sh
    ```
+   The script will prompt to install dependencies via Homebrew (git, neovim, tmux, fzf, yabai, skhd, sketchybar, ghostty, karabiner-elements).
 
 3. Create your local secrets file:
    ```bash
@@ -71,6 +41,34 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
    ```bash
    source ~/.zshrc
    ```
+
+### Install Options
+
+```bash
+./install.sh              # Interactive: prompts for deps, then creates symlinks
+./install.sh --no-deps    # Skip dependency installation, only create symlinks
+./install.sh --deps-only  # Only install dependencies, skip symlinks
+./install.sh --help       # Show help
+```
+
+### Additional Dependencies (Manual)
+
+Some tools require manual installation:
+
+```bash
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Zsh plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+
+# Other useful tools (optional)
+brew install direnv asdf
+```
 
 ## Post-Installation
 
